@@ -1,8 +1,31 @@
 
-#========================================================================
-# Phase Correlation implementation in Python
-# Michael Ting
-# Created 25 June 2013
-# Updated
-#
-#========================================================================
+#=======================================================================#
+# Phase Correlation implementation in Python				#
+# Michael Ting								#
+# Created 25 June 2013							#
+# Updated 8 July 2013							#
+#=======================================================================#
+
+Simple image phase correlation implementation using Python - SciPy and NumPy.
+
+Images are converted to NumPy arrays which are used in the phase correlation
+algorithm.
+
+#=======#
+# Files #
+#=======#
+
+* phase_corr.py	- Python implementation of phase correlation algorithm
+* road.jpg	- the original image test file
+* road1.jpg	- first image used in phase correlation example
+* road2.jpg	- second image used in phase correlation example
+* corr.jpg	- the correlation image file produced from the phase
+		  correlation of road1.jpg and road2.jpg
+
+The phase correlation program reads input from the command line as follows:
+
+$ python phase_corr.py in1 in2 out
+
+* in1	- the name of the first input image
+* in2	- the name of the second input image
+* out	- the name of the output image file with the phase correlation

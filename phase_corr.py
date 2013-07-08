@@ -25,6 +25,7 @@ Algorithm:
 
 import numpy as np
 from scipy import misc
+from argparse import ArgumentParser
 
 # a and b are numpy arrays
 def phase_correlation(a, b):
@@ -37,10 +38,27 @@ def phase_correlation(a, b):
     return r
 
 def main():
-    road1 = misc.imread('road1.jpg')
-    road2 = misc.imread('road2.jpg')
+    
+    parser = ArgumentParser(description="Set parameters phase correlation calculation")
+    
+    parser.add_argument("infile1", metavar="in1", help="input image 1")    
+    parser.add_argument("infile2", metavar="in2", help="input image 2")
+    parser.add_argument("outfile", metavar="out", help="output image file name")
+    
+    args = parser.parse_args()
+    
+    infile1 = open(args.infile1)
+    infile2 = open(args.infile2)
+    outfile = args.outfile
+    newfile = open(outfile, 'w')
+    
+    road1 = misc.imread(infile1)
+    road2 = misc.imread(infile2)
     result = phase_correlation(road1, road2)
-    misc.imsave('corr.jpg', result)
+    misc.imsave(newfile, result)
+    infile1.close()
+    infile2.close()
+    newfile.close()
 
 if __name__=="__main__":
     main()

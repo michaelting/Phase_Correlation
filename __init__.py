@@ -2,4 +2,5 @@
 
 """
 Phase Correlation implementation in Python
+Michael Ting
 """
