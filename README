@@ -17,10 +17,10 @@ algorithm.
 
 * phase_corr.py	- Python implementation of phase correlation algorithm
 * road.jpg	- the original image test file
-* road1.jpg	- first image used in phase correlation example
-* road2.jpg	- second image used in phase correlation example
+* road1.jpg	- first image used in phase correlation example, 122x122 px
+* road2.jpg	- second image used in phase correlation example, 122x122 px
 * corr.jpg	- the correlation image file produced from the phase
-		  correlation of road1.jpg and road2.jpg
+		  correlation of road1.jpg and road2.jpg, 122x122 px
 
 The phase correlation program reads input from the command line as follows:
 
@@ -29,3 +29,5 @@ $ python phase_corr.py in1 in2 out
 * in1	- the name of the first input image
 * in2	- the name of the second input image
 * out	- the name of the output image file with the phase correlation
+
+NOTE: Both input images must be the same size
