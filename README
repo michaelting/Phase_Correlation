@@ -3,7 +3,7 @@
 # Phase Correlation implementation in Python				#
 # Michael Ting								#
 # Created 25 June 2013							#
-# Updated 8 July 2013							#
+# Updated 19 July 2013							#
 #=======================================================================#
 
 Simple image phase correlation implementation using Python - SciPy and NumPy.
@@ -31,3 +31,14 @@ $ python phase_corr.py in1 in2 out
 * out	- the name of the output image file with the phase correlation
 
 NOTE: Both input images must be the same size
+
+#==============#
+# Dependencies #
+#==============#
+
+* argparse	- Available in Python >= 2.7 and 3
+
+* NumPy		- Can be found at www.numpy.org
+
+* SciPy		- Can be found at www.scipy.org
+
